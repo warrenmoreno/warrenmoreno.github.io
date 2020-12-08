@@ -1,13 +1,11 @@
-﻿<!-- 
-
+<!-- 
 Original Author: Warren Moreno
-Date Created: August 20th, 2019
-Version: LiveVersion0.1
-Date Last Modified: Februray 10th, 2020
+Date Created: November 20, 2020
+Version: 1
+Date Last Modified: December 6th, 2020
 Modified by: Warren Moreno
-Modification log: added login nav
-Filename: index2.html
-
+Modification log: 
+Filename: index.html
 -->
 
 <!DOCTYPE html>
@@ -15,96 +13,201 @@ Filename: index2.html
 	
 <head>
 	
-	<meta charset="utf-8">		
-	<title>Project#04</title>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Demented Games, Let Your Imagination Run Wild" />
-	<meta name="keywords" content="video games, computer games, LARP">
-	
-	<link href="css/index_visual.css" rel="stylesheet" media="all"/>
-	<link href="css/visual_style2.css" rel="stylesheet" media="screen"/>
-	<link href="css/print_style.css" rel="stylesheet" media="print"/>
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-	<link rel="manifest" href="images/favicon_io/site.webmanifest">
-	
+<meta charset="utf-8">
+<meta name="description" content="Landing page for Profile">
+<meta name="keywords" content="HTML, Unity, JavaScript">
+<meta name="author" content="Warren Moreno">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Warren Moreno</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="images/favicon_io/site.webmanifest">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
 </head>
 
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #333;
+      padding: 20px;
+	  color: #fff;
+    }
+	
+	.jumbotron {
+	  background-image: url(images/personalPhoto.jpg);
+	  background-position: center;
+	  color: black;
+	}
+	
+	body {
+	  font-family: Lobster;
+	  background-image: url(images/code-wallpaper.jpg);
+	  background-position: center;
+	  background-size: cover;
+	  color: white;
+	}
+	
+	div p {
+	  font-family: Lobster;
+	  color: #C82ED5;
+	  font-size: 1.5em;
+	  
+	  background-color: black;
+	  border-style: ridge;
+	  border-width: 5px;
+	  border-color: gray;
+	  padding: 5px;
+	  margin: auto;
+	  overflow: hidden;
+	  max-width: 740px;
+	}
+	
+	h2 {
+	  font-size: 3em;
+	}
+	
+	
+  </style>
+
+
 <body>
-	<header>
-		<audio autoplay loop controls >
-			<source src="audio/darren-curtis-the-old-pumpkin-patch.mp3" autoplay="true" type="audio/mp3" />
-			
-			<p><em>To play this audio clip, your browser needs to support HTML5.</em></p>
-		</audio>
-		 
-		<!-- The Old Pumpkin Patch by Darren-Curtis | https://soundcloud.com/desperate-measurez
-		Music promoted by https://www.free-stock-music.com
-		Creative Commons Attribution 3.0 Unported License
-		https://creativecommons.org/licenses/by/3.0/deed.en_US -->
-		
-		<h1>Demented Games, <br/>play for fun, stay to broaden your horizons...</h1>
-		
-    <nav class="horizontal">
-	 <a id="navicon" href="#"><img src="images/navicon.png" alt="" /></a>
-		<ul>
-            <li><a class="active" href="index2.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="feedback.aspx">Feedback</a></li>
-            <li><a href="login.php">Login</a></li>
-        </ul>
-    </nav>
-		
-	</header>
-		
-	<article>
-		<section>
-			<figure id="figure1">
-				<img src="images/adult-competition-concentration-929831.png" alt="" />
-				<figcaption> 2017 Contest event</figcaption>
-			</figure>
-		</section>
-		
-		
-		<!-- Introduction to site -->
-		<section id="homeDisc">
-			
-			<p>We here at Demented Games look towards the future of gaming,<br/>
-				in which we see the evolution games from simple board games<br/>
-				to highly complex computer games from console to PC. We believe 
-				that all adventures will continue to expand with the growth of imagination.<br /> <br />
-				
-				We also offer on-site tutoring from Card Games like Poker and Blackjack, 
-				to detailed Minecraft survival walkthroughs. Want to survive that next dungeon crawl
-				or make a better character from a Paladin to a Rogue for the next D&#38;D setup, we can help!<br /> <br />
 
-				No matter what we have one goal, to bring the fun and imagination to the next level. 
-				So what are you waiting for? Bring your friends and family and come on down!
-			</p>
-			 
-		</section>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Portfolio</a>
+    </div>
+	
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="experience.html">Experience</a></li>
+		<li><a href="contact.html">Contact</a></li>
 		
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Links <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.linkedin.com/in/warren-moreno-134a81197" target="_blank">Warren LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/groups/13653321/" target="_blank">CWI LinkedIn</a></li>
+            <li><a href="https://github.com/warrenmoreno" target="_blank">GitHub</a></li>
+			<li><a href="https://sharemygame.com/@Warren_M/" target="_blank">ShareMyGame</a></li>
+          </ul>
+        </li>
+		
+    </div>
+  </div>
+</nav>
 
-	</article>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1></h1>      
+  </div>
+</div>
+
+
+<div class="container-fluid bg-3 text-center">  
+
+  <h2><u>What I am</u></h2><br>
+	<div class="row">
+		<div class="col-sm-3">
+		</div>
+		
+		<div class="col-sm-6">
+		<p>Since beginning my journey in 2019 into Software Development I’ve come to learn so much, 
+			from how to build a website from a number of different site types with Visual Studios to 
+			designing video games from an rollercoaster shooter to an Escape Room with Unity. 
+			I once thought that building a website was just a couple of quick bits of code and hey, you’re done! 
+			That’s not true, it takes time and effort to build these sites and sometimes a whole team is needed 
+			so collaborating with a team is something that continues to be an ongoing learning process. 
+			I also have several certificates as shown below and I continue my studies to add more on top of theses. 
+			If you like to reach out to me and possible discuss a job opportunity or a help with a ongoing project 
+			please reach me at the contacts below or in the contact section above. 
+		</p>
+		</div>
+		
+		<div class="col-sm-3">
+		</div>
+	</div><br><br>
+
+
+  
+  <h2><u>Certificates</u></h2><br>
+  
+  <div class="row">
 	
-	<!--contact number-->
-	<footer>
-		Call <a href="tel:+12086250197">(208) 625-0197</a> for any questions about upcoming events,
-		or check us out on Facebook or Twitch.<br /><br />
-			
-		<a href="https://twitch.tv/" target="_blank">
-			<img src="images/iconmonstr-twitch-3-64.png" alt="social icon for GitHub"></a>
-			
-		<a href="https://www.facebook.com/" target="_blank">
-			<img src="images/iconmonstr-facebook-3-64.png" alt="social icon for Linkedin"></a>
-			
-	</footer>
 	
+    <div class="col-sm-4">
+      <p>LinkedIn LearningASP.NET MVC 5 Essential Training</p><br>
+      <a href="images/ASPNET_MVC5_EssentialTrainCertif.PNG" target="_blank">
+		<img src="images/ASPNET_MVC5_EssentialTrainCertif.PNG" class="img-responsive" 
+		style="width:100%" alt="LinkedIn LearningASP.NET MVC 5 Essential Certificate"></a>
+    </div>
+	
+    <div class="col-sm-4">
+      <p>MTA Database Administration Fundamentals</p><br>
+      <a href="images/databaseAdminFundmtlCertif.PNG" target="_blank">
+		<img src="images/databaseAdminFundmtlCertif.PNG" class="img-responsive" 
+		style="width:100%" alt="MTA Database Administration Fundamentals Certificate"></a>
+    </div>
+	
+	<div class="col-sm-4">
+      <p>MTA HTML5 Application Developement Fundamentals</p><br>
+      <a href="images/HTML5AppDevFundamtlsCertif.PNG" target="_blank">
+		<img src="images/HTML5AppDevFundamtlsCertif.PNG" class="img-responsive" 
+		style="width:100%" alt="MTA HTML5 Application Developement Fundamentals"></a>
+    </div>
+  </div>
+	
+	<div class="col-sm-1">
+    </div>
+	
+</div><br>
+
+
+<footer class="text-center">
+	<address>
+	<p>Contact me via phone: <a href="tel:208-957-0581">(208) 957-0581</a><br>
+		Or by email at: <a href="mailto:wmoreno125@gmail.com">wmoreno125@gmail.com</a><br>
+		13407 Locust Ln.</p>
+	</address>
+
+
+	<!--<p> 
+	<a href="https://www.linkedin.com/in/warren-moreno-134a81197" target="_blank">
+	<img src="images/iconmonstr-linkedin-3-96.png" alt="social icon for Linkedin"></a>
+	
+	<a href="https://github.com/warrenmoreno" target="_blank">
+	<img src="images/iconmonstr-github-1-96.png" alt="social icon for GitHub"></a>
+	</p>
+	
+	<a href="https://www.linkedin.com/groups/13653321/" target="_blank">
+	<img src="images/iconmonstr-linkedin-3-96.png" alt="social icon for Linkedin"></a>-->
+	
+</footer>
+
+
 </body>
-
-
+	
 </html>
