@@ -1,0 +1,134 @@
+<!-- 
+
+Original Author: Warren Moreno
+Date Created: May 2nd, 2019
+Version: 1
+Date Last Modified: September 23rd, 2019
+Modified by: Warren Moreno
+Modification log: Time Clock added
+Filename: contact.html
+
+-->
+	<!DOCTYPE html>
+	<html lang="en">
+		
+		<head>
+		
+		 <!-- Meta Tags -->
+		 <meta charset="utf-8">
+		 <meta name="description" content="Personal Profile">
+		 <meta name="keywords" content="HTML,C#, Visual Studios">
+		 <meta name="author" content="Warren Moreno">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 
+		 <title>Personal Portfolio</title>
+		 
+		 <!-- Favicon -->
+		 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io2/favicon-32x32.png">
+		 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io2/favicon-16x16.png">
+		 <link rel="manifest" href="images/favicon_io2/site.webmanifest">
+		 
+		 <!-- CSS StyleSheet -->
+		 <link rel="stylesheet" href="css/styles.css">
+		 
+		 <!-- Google Fonts -->
+		 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		 
+		 <!-- JavaScript -->
+		 <script src="js/time_n_calendar.js" defer></script>
+		</head>
+		
+		<body>
+		
+			<!-- Current Date and Time -->
+			<div id="dateNow">XX/XX/XXXX<br />X:XX:XX p.m.</div>
+			
+			<!-- navBar -->
+			<nav>
+				<ul>
+				  <li><a href="landing.html">Home</a></li>
+				  <li><a href="experience.html">Experience</a></li>
+				  <li><a class="active" href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<!-- Main Start -->
+				<main>
+					<!-- Header 1 -->
+					  <h1><a href="landing.html"><img src="images/personalPhoto.jpg" alt="logo"></a><br>Warren Moreno</h1>
+					  <!-- Header 2 -->
+					  <h2 id="intro"> How to Reach Me</h2>
+					  
+						<div>	
+							<form action="mailto:wmoreno125@gmail?subject=Personal%20Portfolio%20Mail" 
+										enctype="text/plain" method="POST">
+							<!-- Radio Fieldset -->
+							<fieldset>
+							 <legend>How Did You Hear About Me?</legend>
+								<ul>
+									<li><label><input type="radio" name="How Did You Hear About Me?" value="Indeed">Indeed</label></li>
+									<li><label><input type="radio" name="How Did You Hear About Me?" value="LinkedIn"> LinkedIn</label></li>
+									<li><label><input type="radio" name="How Did You Hear About Me?" value="Job Fair"> Job Fair</label></li>
+									<li><label><input type="radio" name="How Did You Hear About Me?" 
+										value="CWI Software Development Corporate Partner"> CWI Software Development Corporate Partner</label></li>
+								</ul>
+							</fieldset><br>
+								
+								<!-- Select Optgroup -->
+								<label>Type of Position:</label>
+								<select>
+									<optgroup label="Hired Position">
+										<option value="Full-Time">Full-time</option>
+										<option value="Part-Time">Part-Time</option>
+									</optgroup>
+									<optgroup label="Possible Position">
+										<option value="Temporary">Temporary</option>
+										<option value="Contract">Contract</option>
+										<option value="On Call">On Call</option>
+									</optgroup>
+								</select><br><br>
+								
+								
+								<!-- Contact Details -->
+								<label for="firstName">First Name: </label><br> 
+								<input type="text" name="firstName" size="20" id="firstName"><br>
+								
+								<label for="lastName">Last Name: </label><br> 
+								<input type="text" name="lastName" size="20" id="lastName"><br>
+								
+								<label for="phoneNum">Phone: </label><br> 
+								<input type="text" name="phoneNum" size="20" id="phoneNum"><br>
+								
+								<label for="contactEmail">Email: </label><br> 
+								<input type="text" name="contactEmail" size="20" id="contactEmail"><br><br>
+								
+								<label for="questions">Have a question/concern?: </label><br>
+								<textarea cols="30" rows="10" name="details" id="questions"></textarea><br><br>
+								
+								<!-- Button -->
+								<input type="submit" id="submit" value="Submit" class="btn">
+							</form><br>
+							
+						</div>
+				</main>
+			<!-- Footer Start -->
+			<footer>
+				<!-- Contact Links -->
+				<address>
+					<p>Contact me via phone: <a href="tel:208-957-0581">(208) 957-0581</a><br>
+						Or by email at: <a href="mailto:wmoreno125@gmail.com">wmoreno125@gmail.com</a><br>
+						13407 Locust Ln.</p>
+				</address>
+				
+				<!-- WebPage Links -->
+				<p class="icons"> <a href="https://www.linkedin.com/in/warren-moreno-134a81197" target="_blank">
+						<img src="images/iconmonstr-linkedin-3-96.png" alt="social icon for Linkedin"></a>
+						
+					<a href="https://github.com/warrenmoreno" target="_blank">
+						<img src="images/iconmonstr-github-1-96.png" alt="social icon for GitHub"></a>
+				</p>
+			</footer>
+		</body>
+
+	</html>

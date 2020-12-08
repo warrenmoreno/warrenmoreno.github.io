@@ -1,0 +1,182 @@
+<!-- 
+
+Original Author: Warren Moreno
+Date Created: May 2nd, 2019
+Version: Live v0.2
+Date Last Modified: September 23rd, 2019
+Modified by: Warren Moreno
+Modification log: Time Clock added, examples of work added
+Filename: experience.html
+
+-->
+	<!DOCTYPE html>
+	<html lang="en">
+		
+		<head>
+		 
+		 <!-- Meta Tags -->
+		 <meta charset="utf-8">
+		 <meta name="description" content="Personal Profile">
+		 <meta name="keywords" content="HTML,C#, Visual Studios">
+		 <meta name="author" content="Warren Moreno">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 
+		 <title>Personal Portfolio</title>
+		 
+		 <!-- Favicon -->
+		 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io2/favicon-32x32.png">
+		 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io2/favicon-16x16.png">
+		 <link rel="manifest" href="images/favicon_io2/site.webmanifest">
+		 
+		 <!-- CSS Stylesheet -->
+		 <link rel="stylesheet" href="css/styles.css">
+		 
+		 <!-- Google Fonts -->
+		 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		 
+		 <!-- JavaScript -->
+		 <script src="js/time_n_calendar.js" defer></script>
+		 
+		 
+		</head>
+		
+		<body>
+		
+			<!-- Current Date and Time -->
+			<div id="dateNow">XX/XX/XXXX<br />X:XX:XX p.m.</div>
+			
+			<!-- navBar -->
+			<nav>
+				<ul>
+				  <li><a href="landing.html">Home</a></li>
+				  <li><a class="active" href="experience.html">Experience</a></li>
+				  <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+				<!-- Main Start -->
+				<main>
+					<!-- Header 1 -->
+					<h1><a href="landing.html"><img src="images/personalPhoto.jpg" alt="logo"></a><br>Warren Moreno</h1>
+					
+					<!-- Header 2 -->
+					<h2><span style="color:red; font-weight:bold; font-style: Italic; font-size: 2em;">Experience</span></h2>
+					
+					<div>
+						<!-- Experience Table -->
+						<table>
+							<caption id="intro">Software Development, AAS</caption>
+							
+							<thead>
+								
+								<tr>
+									<th>Block</th> <th>Course Title</th> <th>Development Tool</th>
+								</tr>
+							
+							</thead>
+							
+							<tbody>
+
+
+								
+								<tr>
+									<td rowspan="3">Fall</td>
+									<td>Introduction to Programming</td> <td>Beginning C#</td> 
+								</tr>
+								<tr>
+									<td>Intermediate Programming</td> <td>Intermediate C#</td> 
+								</tr>
+								<tr>
+									<td>Introduction to Web Application Development</td> <td>HTML5 & CSS3</td> 
+								</tr>
+								
+
+								
+								<tr>
+									<td rowspan="3">Spring</td>
+									<td>Web Styling</td> <td>Advanced CSS3, Bootstrap, SASS</td> 
+								</tr>
+								<tr>
+									<td>Intermediate Web Application Development</td> <td>JavaScript</td> 
+								</tr>
+								<tr>
+									<td>System Analysis and Design</td> <td>Visual Paradigm, MS Project, PPT</td> 
+								</tr>
+
+								
+								
+								<tr>
+									<td rowspan="3">Fall</td>
+									<td>Introduction to Server Side Programming</td> <td>PHP</td> 
+								</tr>
+								<tr>
+									<td>Fundamentals of Database Systems</td> <td>SQL</td> 
+								</tr>
+								<tr>
+									<td>Advanced Web Application Development</td> <td>ASP.NET</td>
+								</tr>
+
+								
+								<tr>
+									<td rowspan="4">Spring</td>
+									<td>Game Development</td> <td>Unity</td> 
+								</tr>
+								<tr>
+									<td>Mobile Development</td> <td>Xamarin</td> 
+								</tr>
+								<tr>
+									<td>Collaborative Development</td> <td>Unity/Visual Studios</td>
+								</tr>
+								<tr>
+									<td>Software Development Internship</td> <td>HomeCU</td>
+								</tr>
+								
+							</tbody>
+							
+							<tfoot>
+								<tr>
+									<td colspan="3">If more Courses and Development Tools are gained the table will be updated</td>
+								</tr>
+							</tfoot>
+							
+						</table>
+						
+						<!-- Examples of Work -->
+						<h2>Examples of Work</h2>
+						
+						<p>These are just a few examples of what knowledge I've gained within the CWI Developement program.</p>
+						
+						<img id="examples" src="images/dementedGames.PNG" alt="Demented Games">
+						<form action="http://" method="get" target="_blank">
+							<button type="submit">Demented Games</button>
+						</form>
+						
+						
+						<img id="examples" src="images/escapeRoomv01.PNG" alt="Escape Room">
+						<form action="https://sharemygame.com/@Warren_M/escape-room-v1" method="get" target="_blank">
+							<p>Game currently a work in progress.</p>
+							<button type="submit">Escape Room Unity Game</button>
+						</form>
+						
+					</div>
+				</main>	
+				
+			<!-- Footer Start-->
+			<footer>
+				<!-- Contact Links -->
+				<address>
+					<p>Contact me via phone: <a href="tel:208-957-0581">(208) 957-0581</a><br>
+						Or by email at: <a href="mailto:wmoreno125@gmail.com">wmoreno125@gmail.com</a><br>
+						13407 Locust Ln.</p>
+				</address>
+				
+				<!-- WebPage Links -->
+				<p class="icons"> <a href="https://www.linkedin.com/in/warren-moreno-134a81197" target="_blank">
+						<img src="images/iconmonstr-linkedin-3-96.png" alt="social icon for Linkedin"></a>
+						
+					<a href="https://github.com/warrenmoreno" target="_blank">
+						<img src="images/iconmonstr-github-1-96.png" alt="social icon for GitHub"></a>
+				</p>
+			</footer>			
+		</body>
+	</html>
